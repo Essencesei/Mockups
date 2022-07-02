@@ -102,4 +102,24 @@ a:hover {
 }
 
 
-Copyright © [Year] [Author Essenc]
+/* MOBILE VIEW */
+
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+  .left,
+  .right {
+    margin: 0;
+    flex: 0;
+  }
+
+  .left {
+    text-align: center;
+    width: 80%;
+  }
+
+  .left p {
+    font-size: 1.5rem;
+  }
+}
