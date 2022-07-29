@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  font-size: 15px;
+}
+
+body {
+  background-color: #fafafa;
+}
+.app {
+  display: grid;
+  grid-template-areas: "right left";
+  grid-template-columns: repeat(2, 1fr);
+  font-family: "Roboto", sans-serif;
+}
+
+.login-card {
+  padding: 2rem;
+  border: 1px solid #dbdbdb;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+input {
+  padding: 0.9rem;
+  margin: 0.2rem;
+  border: 1px solid #dbdbdb;
+  border-radius: 0.3rem;
+}
+form input:nth-of-type(3) {
+  background-color: #b2dffc;
+  color: #fff;
+  font-weight: bolder;
+}
+.right {
+  display: flex;
+  padding: 3rem 0rem 3rem;
+}
+.right > img {
+  position: relative;
+  left: 13rem;
+}
+.left {
+  padding: 3rem;
+  width: 30rem;
+}
+.logo {
+  padding: 1.5rem;
+}
+.login-card-span-or {
+  display: inline-block;
+  padding: 0.2rem;
+  position: relative;
+  background-color: #fff;
+  top: -15px;
+}
+.fade {
+  width: 250px;
+  position: absolute;
+  left: -115px;
+  top: 30px;
+}
+
+.login-fb-icon-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-fb-icon-text img {
+  width: 30px;
+  height: auto;
+}
+.login-fb-icon-text a {
+  text-decoration: none;
+}
+.left-bottom {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  padding: 2rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+.left-bottom-getapp {
+  text-align: center;
+  padding: 1rem;
+}
+.left-bottom-getapp p {
+  padding: 1rem;
+}
+
+.left-bottom-getapp-img {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.left-bottom-getapp-img img {
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1168px) {
+  .app {
+    display: flex;
+    justify-content: center;
+  }
+  .right {
+    display: none;
+  }
+}
