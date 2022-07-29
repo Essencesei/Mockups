@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "chirp-bold-web";
+  src: url(fonts/chirp-bold-web.woff);
+}
+@font-face {
+  font-family: "chirp-extended-heavy-web";
+  src: url(fonts/chirp-extended-heavy-web.woff);
+}
+@font-face {
+  font-family: "chirp-regular-web";
+  src: url(fonts/chirp-regular-web.woff);
+}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+/* font-family: 'Open Sans', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    "left right"
+    "footer footer";
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100vh max-content;
+}
+
+.left {
+  grid-area: left;
+  background-image: url(img/lohp_en_1302x955.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left img {
+  width: 300px;
+  height: 300px;
+}
+
+.right {
+  grid-area: right;
+  background-color: #000000;
+  color: #fff;
+  padding: 2rem;
+}
+.icon img {
+  width: 40px;
+  height: 40px;
+}
+.title,
+.sub-title {
+  font-family: "chirp-extended-heavy-web";
+  font-size: 4rem;
+  margin: 50px 0;
+}
+.sub-title {
+  font-size: 1.9rem;
+  margin: 0 0 20px 0;
+}
+.login-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.login-card button,
+.signin button {
+  border-radius: 12vmax;
+  width: 18rem;
+  font-family: "chirp-bold-web";
+  padding: 0.7rem;
+  background-color: #fff;
+  border: none;
+  margin: 10px 0px;
+  transition: 0.3s ease-in-out;
+}
+.login-card button:nth-last-child(2) {
+  color: #fff;
+  background-color: #1a8cd8;
+}
+.login-card span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.7rem;
+  color: #71767b;
+  width: 50%;
+}
+.login-card span a {
+  color: #1d88b2;
+  text-decoration: none;
+}
+.login-card img:nth-of-type(1),
+.login-card img:nth-of-type(2) {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 55px;
+  top: 18px;
+}
+.login-card div {
+  position: relative;
+}
+.signin {
+  font-family: "chirp-bold-web";
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+.signin button {
+  background-color: #000000;
+  border: 1px solid #39464f;
+  color: #109bf0;
+  margin-top: 1rem;
+}
+.footer {
+  grid-area: footer;
+  background-color: #000000;
+  color: #4d7667;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.7rem;
+}
+.footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  list-style-type: none;
+}
+.footer li {
+  margin: auto;
+}
+
+.login-card button:hover,
+login-card button:nth-last-child(2) {
+  background-color: #e6e6e6;
+  cursor: pointer;
+}
+.login-card button:nth-last-child(2):hover {
+  background-color: #1579bb;
+}
+
+.signin button:hover {
+  background-color: #082b41;
+  cursor: pointer;
+}
+
+span a:hover {
+  text-decoration: underline;
+}
+
+li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
