@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script defer src="./script/main.js"></script>
+    <title>Bank JS</title>
+  </head>
+  <body>
+    <!-- header -->
+
+    <header class="header">
+      <h1 class="header_title">Bank JS</h1>
+      <!-- navigation -->
+
+      <nav class="nav nav--loggedOut">
+        <ul class="nav__links">
+          <li class="nav_item">
+            <a href="" class="nav__link" data-src=".section__Login">Login</a>
+          </li>
+          <li class="nav_item">
+            <a href="" class="nav__link" data-src=".section__createAccount"
+              >Open Account</a
+            >
+          </li>
+          <li class="nav_item">
+            <a href="" class="nav__link" data-src=".logout"> Logout </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="nav nav--loggedIn --hidden">
+        <ul class="nav__links">
+          <li class="nav_item">
+            <a href="" class="nav__link" data-src=".section__withrdaw"
+              >Withdraw</a
+            >
+          </li>
+          <li class="nav_item">
+            <a href="" class="nav__link" data-src=".section__deposit"
+              >Deposit</a
+            >
+          </li>
+          <li class="nav_item">
+            <a href="" class="nav__link" data-src=".section__transfer">
+              Transfer
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="" class="nav__link" data-src=".logout"> Logout </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- main -->
+
+    <main class="main">
+      <section class="section section__Login">
+        <label for="section__login__form" class="section__login__label --label"
+          >Login to Bank JS</label
+        >
+        <form action="" class="section__login__form --form">
+          <input
+            type="text"
+            class="section__login__input section__login__username --input"
+            placeholder="Username"
+          />
+          <input
+            type="password"
+            class="section__login__input section__login_password --input"
+            minlength="6"
+            maxlength="6"
+            placeholder="Password"
+          />
+          <input
+            type="submit"
+            value="Login"
+            class="section__login__submit --input"
+          />
+        </form>
+      </section>
+      <section class="section section__createAccount --hidden">
+        <label
+          for="section__register__form --label"
+          class="section__label --label"
+          >Open Account</label
+        >
+        <form action="" class="section__register__form --form">
+          <input
+            type="text"
+            name=""
+            id=""
+            class="section__register_input section__register__firstname --input"
+            placeholder="First Name"
+          />
+          <input
+            type="text"
+            name=""
+            id=""
+            class="section__register_input section__register__lastname --input"
+            placeholder="Last Name"
+          />
+          <input
+            type="text"
+            name=""
+            id=""
+            class="section__register_input section__register__username --input"
+            placeholder="Username"
+          />
+          <input
+            type="date"
+            name=""
+            id=""
+            class="section__register_input section__register__dateOfBirth --input"
+          />
+          <input
+            type="password"
+            name=""
+            id=""
+            class="section__register_input section__register__password --input"
+            placeholder="Password"
+          />
+          <input
+            <input
+            type="number"
+            name=""
+            id=""
+            class="section__register_input section__register__initial --input"
+            placeholder="Initial Deposit"
+          />
+
+          <select name="" id="" class="section__register__currency --input">
+            <option value="USD">US Dollars</option>
+            <option value="PHP" selected>Philippine Peso</option>
+          </select>
+          <input
+            type="submit"
+            value="Create Account"
+            class="section__register__submit --input"
+          />
+        </form>
+      </section>
+
+      <section class="section__information --hidden">
+        <!-- <h1 class="section__information_greetings"></h1>
+        <span class="section__information__time"></span>
+        <span class="section__information__balance"></span> -->
+
+        <div class="transaction">
+          <!-- asdf -->
+        </div>
+
+        <!-- <div class="transaction">
+          <div class="transaction__item">
+            <span class="transaction__item__type">Withdraw</span>
+            <span class="transaction__item__date">10/10/10</span>
+            <span class="transaction__item__amount">500</span>
+          </div>
+        </div> -->
+      </section>
+
+      <section class="section section__withrdaw --hidden">
+        <form action="" class="section__withdraw__form --form">
+          <input
+            type="number"
+            name=""
+            id=""
+            class="section__withdraw_input section__withdraw__value --input"
+          />
+          <input
+            type="submit"
+            value="Withdraw"
+            class="section__withdraw__submit --input"
+          />
+        </form>
+      </section>
+
+      <section class="section section__deposit --hidden">
+        <form action="" class="section__deposit__form --form">
+          <input
+            type="number"
+            name=""
+            id=""
+            class="section__deposit_input section__deposit__value --input"
+          />
+          <input
+            type="submit"
+            value="Deposit"
+            class="section__deposit__submit --input"
+          />
+        </form>
+      </section>
+
+      <section class="section section__transfer --hidden">
+        <form action="" class="section__transfer__form --form">
+          <input
+            type="text"
+            name=""
+            id=""
+            class="section__transfer_input section__transfer__receiver --input"
+            placeholder="Receiver's Username"
+          />
+          <input
+            type="number"
+            name=""
+            id=""
+            class="section__transfer_input section__transfer__value --input"
+          />
+          <input
+            type="submit"
+            value="Transfer"
+            class="section__transfer__submit --input"
+          />
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div>TEST DATA: jdc:000000, jd:111111</div>
+      <div>by: Essencesei</div>
+    </footer>
+  </body>
+</html>
+
+<!-- Designed and Developed by Essencesei -->

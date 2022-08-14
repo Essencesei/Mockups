@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: rgb(40, 43, 59);
+}
+.header {
+  padding: 2rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__links {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav__link {
+  text-decoration: none;
+  padding: 0.5rem;
+  color: #ffffff;
+}
+
+.nav__link:hover {
+  background-color: #ffffff;
+  color: black;
+  transition: 0.2s ease-in-out;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.section__information {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  color: #ffffff;
+  align-items: center;
+}
+.transaction {
+  padding: 1rem;
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 250px;
+  overflow-y: scroll;
+}
+
+.transaction__item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.transaction__item__type {
+  flex: 1;
+  text-align: start;
+}
+.transaction__item__date {
+  flex: 1;
+  text-align: center;
+}
+.transaction__item__amount {
+  flex: 1;
+  text-align: end;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  font-size: 0.5rem;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.--withdraw {
+  background-color: green;
+}
+.--deposit {
+  background-color: red;
+}
+
+.--form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 20rem;
+}
+
+.--input {
+  padding: 0.4rem;
+}
+
+.--label {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.--invisible {
+  opacity: 0;
+}
+
+.--hidden {
+  display: none;
+}
+
+@media screen and (max-width: 794px) {
+  .transaction {
+    width: 95%;
+  }
+  .transaction__item__date {
+    text-align: start;
+  }
+}
+@media screen and (max-width: 563px) {
+  .header {
+    padding: 3rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .transaction {
+    width: 95%;
+  }
+  .transaction__item__date {
+    text-align: start;
+  }
+  .transaction__item__type {
+    display: none;
+  }
+}
+/* Designed and Developed by Essencesei */
